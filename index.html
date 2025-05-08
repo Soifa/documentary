@@ -1,23 +1,211 @@
 <!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markham Museum Documentary | Sofia Xu Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffffff, #f6f1fb);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
-</style>
-    
+    header {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(to right, #f6f1fb, #ffe1f3);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #5e2ca5;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: #5e2ca5;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #7a4ed7;
+      border-bottom: 2px solid #e5c7ff;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight {
+      background: #f7f4fc;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      display: block;
+      margin: 2rem auto;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(to right, #f6f1fb, #ffe1f3);
+      color: #5e2ca5;
+      font-weight: bold;
+      padding: 0.6rem 1.4rem;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #d6c6f8, #ffc4de);
+      color: #4a1e95;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📽️ Markham Museum Documentary</h1>
+    <nav>
+      <a href="https://soifa.github.io/sofia-portfolio/#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>🎥 Project Overview</h2>
+      <p>This documentary captures the evolution of Markham through the preserved stories, spaces, and objects inside the Markham Museum. Shot on-location with ambient audio, expert interviews, and rich visuals.</p>
+      <iframe src="https://www.youtube.com/embed/3YbWMkGh0gU?si=veS6BZqEFGk_3jwL" title="YouTube video player" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>👩🏻‍💻 My Role</h2>
+      <div class="highlight">
+        <ul>
+          <li>🎬 Co-Director & Visual Storyteller</li>
+          <li>📝 Wrote the treatment & interview scripts</li>
+          <li>🎤 Led interviews with museum guide</li>
+          <li>📸 Operated camera and gimbal</li>
+          <li>🎧 Narration editing & pacing support</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>🧰 Tools & Workflow</h2>
+      <div class="highlight">
+        <ul>
+          <li>Canon R7 + Zhiyun Gimbal</li>
+          <li>Zoom H6 Audio Recorder</li>
+          <li>Premiere Pro + Audition</li>
+          <li>Photoshop (for scanned images)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+  <h2>📸 Behind the Scenes</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+    <img src="image-min.png" alt="Train Exhibit Tour">
+    <img src="image2-min.png" alt="Interactive Display - Handle Spin">
+    <img src="image3-min.png" alt="Red Ball Machine Interaction">
+    <img src="image4-min.png" alt="Final Play Moment">
+  </div>
+</section>
+
+    <section>
+      <h2>💭 Reflections</h2>
+      <p>This project was a deeply meaningful dive into historical storytelling. It taught me how sound, visuals, and human emotion come together to preserve a community’s legacy. The process deepened my respect for detail and sensitivity in design.</p>
+    </section>
+  </div>
+
+  <script>
+    document.querySelectorAll("img").forEach(img => {
+      img.addEventListener("click", () => {
+        const modal = document.createElement("div");
+        modal.style.position = "fixed";
+        modal.style.top = 0;
+        modal.style.left = 0;
+        modal.style.width = "100vw";
+        modal.style.height = "100vh";
+        modal.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        modal.style.display = "flex";
+        modal.style.justifyContent = "center";
+        modal.style.alignItems = "center";
+        modal.style.zIndex = 9999;
+        modal.style.cursor = "zoom-out";
+
+        const fullImg = document.createElement("img");
+        fullImg.src = img.src;
+        fullImg.style.maxWidth = "90vw";
+        fullImg.style.maxHeight = "90vh";
+        fullImg.style.borderRadius = "16px";
+        fullImg.style.boxShadow = "0 4px 24px rgba(0,0,0,0.3)";
+
+        modal.appendChild(fullImg);
+        modal.addEventListener("click", () => document.body.removeChild(modal));
+        document.body.appendChild(modal);
+      });
+    });
+  </script>
+</body>
+</html>
